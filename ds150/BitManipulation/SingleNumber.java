@@ -13,5 +13,180 @@ public class SingleNumber{
                 break;
             }
         }
+        /*
+        class Solution {
+    public int singleNumber(int[] nums) {
+        int xor=0;
+        for(int i=0;i<nums.length;i++){
+            xor=xor^nums[i];
+        }
+        return xor;
+    }
+}
+    Initialize 
+𝑥
+𝑜
+𝑟
+=
+0
+xor=0.
+
+Traverse the array and XOR each number with the current 
+𝑥
+𝑜
+𝑟
+xor.
+
+Iteration 1: 
+𝑥
+𝑜
+𝑟
+=
+0
+⊕
+4
+=
+4
+xor=0⊕4=4
+Current value of 
+𝑥
+𝑜
+𝑟
+xor: 
+4
+4
+
+Iteration 2: 
+𝑥
+𝑜
+𝑟
+=
+4
+⊕
+1
+=
+5
+xor=4⊕1=5
+Current value of 
+𝑥
+𝑜
+𝑟
+xor: 
+5
+5
+
+Iteration 3: 
+𝑥
+𝑜
+𝑟
+=
+5
+⊕
+2
+=
+7
+xor=5⊕2=7
+Current value of 
+𝑥
+𝑜
+𝑟
+xor: 
+7
+7
+
+Iteration 4: 
+𝑥
+𝑜
+𝑟
+=
+7
+⊕
+1
+=
+6
+xor=7⊕1=6
+Current value of 
+𝑥
+𝑜
+𝑟
+xor: 
+6
+6
+
+Iteration 5: 
+𝑥
+𝑜
+𝑟
+=
+6
+⊕
+2
+=
+4
+xor=6⊕2=4
+Current value of 
+𝑥
+𝑜
+𝑟
+xor: 
+4
+4
+
+After the loop, the value of 
+𝑥
+𝑜
+𝑟
+xor is 
+4
+4, which is the single number.
+
+How XOR Cancels Pairs:
+Numbers appearing twice cancel out because 
+𝑥
+⊕
+𝑥
+=
+0
+x⊕x=0.
+For example:
+4
+⊕
+1
+⊕
+2
+⊕
+1
+⊕
+2
+=
+(
+4
+)
+⊕
+(
+1
+⊕
+1
+)
+⊕
+(
+2
+⊕
+2
+)
+4⊕1⊕2⊕1⊕2=(4)⊕(1⊕1)⊕(2⊕2)
+=
+4
+⊕
+0
+⊕
+0
+=
+4
+=4⊕0⊕0=4.
+Thus, the single number 
+4
+4 remains.
+         */
     }
 }
